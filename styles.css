@@ -1,0 +1,320 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  background-color: #fff; /* Fond blanc pour le corps */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  background-size: cover;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.container21 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles pour le menu hamburger */
+.toggle-button {
+  display: none;
+}
+
+/* Résponsive */
+@media only screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 500px; /* Ajustement de la valeur top */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon {
+    display: block;
+    color: var(--light-color);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu li {
+    margin-bottom: 0%;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu li a {
+    color: var(--light-color);
+  }
+}
+
+.show-menu {
+  display: flex !important;
+}
+
+/* Section Accueil */
+.categorie1 {
+  background-color: #fff;
+  background-size: cover;
+  color: #000000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.description1 {
+  margin-top: 20px;
+}
+
+/* Styles pour rendre l'image plus petite et centrée */
+.image-salon img {
+  max-width: 200px; /* Taille maximale de l'image */
+  display: block; /* Permet de centrer l'image horizontalement */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Section À Propos */
+.categorie2 {
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.a-propos-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description2 {
+  margin-top: 20px;
+}
+
+/* Section Salon */
+#salon {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.salon-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.salon-image {
+  width: 150px;
+  margin: 10px;
+}
+
+/* Section Tarifs */
+#tarifs {
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Section Équipe */
+.categorie5 {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.equipe-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.membre-equipe {
+  margin: 20px;
+}
+
+.membre-info {
+  margin-top: 10px;
+}
+
+/* Section Avis */
+#avis {
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.avis-item {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.avis-item img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Section Galerie */
+.categorie3 {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.galerie-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galerie-image {
+  width: 150px;
+  margin: 10px;
+}
+
+/* Section Localisation */
+.categorie4 {
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.map {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Contact */
+.categorie5.left {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-credits {
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  font-size: 14px;
+}
+
+/* Section Horaires */
+#horaires {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.horaires-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.horaires-table th, .horaires-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.horaires-table th {
+  background-color: #f2f2f2;
+}
+
+.horaires-table td {
+  text-transform: capitalize;
+}
+
+.horaires-table td:first-child {
+  font-weight: bold;
+}
+
+/* Style spécifique pour les jours */
+.horaires-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
